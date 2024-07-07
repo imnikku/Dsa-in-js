@@ -1,6 +1,6 @@
 function InsertionSortRecursive(arr,starting,length){
     if(starting>length){
-        return 
+        return  arr;
     }
     let remaining=starting;
     while(remaining>0){
@@ -12,8 +12,7 @@ function InsertionSortRecursive(arr,starting,length){
         remaining--;
 
     }
-    InsertionSortRecursive(arr,starting+1,length)
-    return arr;
+  return  InsertionSortRecursive(arr,starting+1,length)
 }
 
 let temp = [499, 23, 1, 99, 26, 74, 34, 75, 98, 48, 90, 81, 3, 6];

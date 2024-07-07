@@ -1,6 +1,6 @@
 function bubleSortImproveRecursive(arr,lastIndex){
     if(lastIndex<=0){
-        return
+        return arr
     }
     let isTraverse=true;
     for(let i=0;i<lastIndex;i++){
@@ -12,8 +12,7 @@ function bubleSortImproveRecursive(arr,lastIndex){
     if(isTraverse){
         return arr
     }
-    bubleSortImproveRecursive(arr,lastIndex-1)
-    return arr;
+  return  bubleSortImproveRecursive(arr,lastIndex-1)
 
 }
 let temp=[499,23,1,54,26,74,34,75,98,48,90,81,3,6,9]
