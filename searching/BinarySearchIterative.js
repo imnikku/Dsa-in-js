@@ -25,7 +25,9 @@ function BinarySearchIterative2(arr,num){
     let end=arr.length-1;
     let pos;
     while(left<=end){
+        
     pos=left+Math.floor((end-left)/2)
+    console.log(pos,left,end)
         if(arr[pos]==num){
             return pos
         }else if(arr[pos]<num){
@@ -40,5 +42,5 @@ function BinarySearchIterative2(arr,num){
 
 }
 
-let temp=[2,3,4,5,6,7,8,9,12,13,16,18,23,25,27,34,35,36];
+let temp=[2,3,4,5,6,7,8,9,12,13,16,18,23,25,27,34,35,36,76];
 console.log(BinarySearchIterative2(temp,5))
